@@ -1,0 +1,61 @@
+# ==========================
+# Terraform
+# ==========================
+*.tfstate
+*.tfstate.*
+.terraform/
+.crash
+
+# Backup and override files
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI local configs
+.terraform.lock.hcl
+
+# ==========================
+# Ansible
+# ==========================
+.ansible/
+*.retry
+*.log
+*.cache
+
+# If you generate host_vars/group_vars dynamically, you might ignore:
+# host_vars/
+# group_vars/
+
+# ==========================
+# SSH keys (security-sensitive!)
+# ==========================
+*.pem
+*.key
+*.pub
+yes
+
+# ==========================
+# Editors & OS junk files
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Python virtual environment (if you use one later)
+# ==========================
+.venv/
+env/
+venv/
+
+# ==========================
+# Misc
+# ==========================
+*.bak
+*.tmp
